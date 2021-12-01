@@ -4,39 +4,150 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 nav {
-}
-
-.logo {
-  padding: 20px 0;
-  background-color: #ddd;
-  font-size: 30px;
-  text-align: center;
-}
-
-.logo::after {
-  content: "🌿";
-  font-size: 11px;
-}
-
-.links {
+  padding: 10px 15px;
   display: flex;
-  list-style: none;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #eee;
   box-shadow: 0 5px 5px #ccc;
 }
 
-.links > li {
+.logo {
+  margin-right: 50px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav > ul {
+  display: flex;
+  margin-right: auto;
+  list-style: none;
+  justify-content: center;
+}
+
+nav > ul > li {
   padding: 10px 0;
 }
 
-.links > li > a {
-  padding: 10px 10px;
+nav > ul > li > a {
+  color: black;
+  padding: 10px 25px;
   text-decoration: none;
 }
 
-.links > li > a:hover {
-  background-color: #ccc;
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.instagram {
+  transform: translateY(10%);
+  flex-grow: 3;
+}
+
+.image {
+  background-image: url("https://www.leukerecepten.nl/wp-content/uploads/2020/04/zelfgemaakte-poffertjes_b.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 250px;
+  z-index: 10;
+}
+
+.image > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.main {
+  display: grid;
+  grid-template-areas: "ingredients serve-with"
+                       "ingredients-list serve-with-list"
+                       "disclaimer disclaimer"
+                       "instructions instructions"
+                       "instructions-list instructions-list";
+  min-height: calc(100vh - 60px - 100px);
+  width: 800px;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.ingredients {
+  align-self: center;
+  grid-area: ingredients;
+}
+
+.ingredients-list {
+  grid-area: ingredients-list;
+}
+
+.serve-with {
+  align-self: center;
+  grid-area: serve-with;
+}
+
+.serve-with-list {
+  grid-area: serve-with-list;
+}
+
+.disclaimer {
+  font-weight: bold;
+  margin: 30px 0;
+  grid-area: disclaimer;
+}
+
+.instructions {
+  align-self: center;
+  grid-area: instructions;
+}
+
+.instructions-list {
+  grid-area: instructions-list;
+}
+
+.instructions-list > li {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #282828;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer > ul > li {
+  color: white;
+  padding: 0 10px;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  margin-top: 10px;
 }
