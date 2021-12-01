@@ -49,7 +49,6 @@ nav > ul > li > a:hover {
 }
 
 div[class^="image"] {
-  background-image: url("https://www.leukerecepten.nl/wp-content/uploads/2020/04/zelfgemaakte-poffertjes_b.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,6 +57,18 @@ div[class^="image"] {
   width: 100vw;
   height: 250px;
   z-index: 10;
+}
+
+.image-home {
+  background-image: url("https://www.leukerecepten.nl/wp-content/uploads/2020/04/zelfgemaakte-poffertjes_b.jpg");
+}
+
+.image-menu {
+  background-image: url("https://www.leukerecepten.nl/wp-content/uploads/2020/04/zelfgemaakte-poffertjes_b.jpg");
+}
+
+.image-recipe {
+  background-image: url("https://www.leukerecepten.nl/wp-content/uploads/2020/04/zelfgemaakte-poffertjes_b.jpg");
 }
 
 .image-contact {
