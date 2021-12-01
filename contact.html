@@ -20,10 +20,28 @@
 
     <div class="image"><h1>Contact us</h1></div>
 
-    
+
 
     <div class="main">
-      
+      <form>
+        <label>Name*</label>
+        <br>
+        <input required type="text" placeholder="e.g. John Doe">
+        <br><br>
+        <label>Email address*</label>
+        <br>
+        <input required type="email" placeholder="e.g. email@example.com">
+        <br><br>
+        <label>Subject*</label>
+        <br>
+        <input required type="text" placeholder="e.g. Poffertjes">
+        <br><br>
+        <label>Message*</label>
+        <br>
+        <textarea required rows="25" cols="50" placeholder="Type your message here"></textarea>
+        <br>
+        <input type="submit" id="sumbit">
+      </form>
     </div>
 
 
@@ -39,5 +57,14 @@
         <li><a href="/contact.html">Contact us</a></li>
       </ul>
     </footer>
+    
+    <script>
+        const submit = document.getElementById("sumbit");
+
+        submit.onclick = function(event) {
+          event.preventDefault();
+          window.location.href = "http://v-poff.ml/";
+        };
+    </script>
 </body>
 </html>
