@@ -95,6 +95,11 @@ div[class^="main"] {
   margin: auto;
 }
 
+.main-home {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-recipe {
   display: grid;
   grid-template-areas: "ingredients serve-with"
