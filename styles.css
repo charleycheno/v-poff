@@ -181,6 +181,8 @@ footer > ul > li > a {
   }
   
   body::before {
-    content: "Not supported on mobile"
+    content: "Not supported on mobile!"
+    color: red;
+    font-weight: bold;
   }
 }
