@@ -95,7 +95,7 @@ div[class^="image"] > h1 {
                        "disclaimer disclaimer"
                        "instructions instructions"
                        "instructions-list instructions-list";
-  min-height: calc(100vh - 60px - 100px);
+  min-height: calc(100vh - 59px - 250px - 100px);
   width: 800px;
   padding: 50px 0;
   margin: auto;
