@@ -88,17 +88,20 @@ div[class^="image"] > h1 {
 
 
 
-.main {
+div[class^="main"] {
+  min-height: calc(100vh - 59px - 250px - 100px);
+  width: 800px;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.main-recipe {
   display: grid;
   grid-template-areas: "ingredients serve-with"
                        "ingredients-list serve-with-list"
                        "disclaimer disclaimer"
                        "instructions instructions"
                        "instructions-list instructions-list";
-  min-height: calc(100vh - 59px - 250px - 100px);
-  width: 800px;
-  padding: 50px 0;
-  margin: auto;
 }
 
 .ingredients {
