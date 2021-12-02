@@ -174,3 +174,13 @@ footer > ul > li > a {
 .copyright {
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+  body > * {
+    display: none;
+  }
+  
+  body::after {
+    content: "Not supported on mobile"
+  }
+}
